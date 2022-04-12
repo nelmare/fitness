@@ -14,7 +14,6 @@
 .promo__container {
   display: flex;
   justify-content: center;
-  //align-items: stretch;
   flex-wrap: nowrap;
   min-height: 500px;
 
@@ -40,7 +39,6 @@
 
   @include vp-767 {
     width: 100%;
-    //row-gap: 15px;
   }
 }
 
@@ -71,7 +69,6 @@
   background-color: $color-midnight-express;
 
   @include vp-1199 {
-    //height: 292px;
     min-height: 292px;
   }
 
@@ -98,7 +95,6 @@
   line-height: 90px;
   letter-spacing: 0.03em;
   color: $color-default-white;
-  //padding-top: 10px;
 
   @include vp-1199 {
     font-size: 52px;
@@ -118,7 +114,6 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(2, 1fr);
-  //row-gap: 32px;
 
   @include vp-1199 {
     margin-top: -3px;
@@ -157,8 +152,6 @@
   @include vp-1199 {
     width: 42px;
   }
-
-
 }
 
 .promo__group--time {
@@ -220,10 +213,6 @@
     line-height: 18px;
     margin-top: -21px;
   }
-
-  @include vp-767 {
-    //margin-top: -23px;
-  }
 }
 
 .promo__info-wrapper a {
@@ -241,10 +230,6 @@
   }
 
   @include vp-767 {
-    //margin-top: 5px;
-    //width: 290px;
-    //margin-right: auto;
-    //margin-left: auto;
     padding-top: 12px;
     padding-bottom: 12px;
   }

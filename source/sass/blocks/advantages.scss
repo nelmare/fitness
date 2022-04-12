@@ -45,7 +45,6 @@
   grid-template-rows: repeat(2, auto);
   column-gap: 60px;
   justify-content: center;
-  //align-items: start;
   width: 89.66%;
 
 
@@ -66,9 +65,6 @@
 }
 
 .advantages__item {
-  //border-left: 5px solid $color-deep-sky-blue;
-  //padding: 40px 45px 35px 42px;
-  //min-height: 300px;
   display: flex;
   align-items: flex-start;
 
@@ -84,19 +80,10 @@
     }
   }
 
-  //@include vp-1023 {
-  //  padding-bottom: 31px;
-  //  padding-top: 38px;
-  //  min-height: 360px;
-  //}
-  //
   @include vp-767 {
-    //padding: 31px 25px 35px 25px;
-   flex-direction: column;
+    flex-direction: column;
     align-items: center;
     text-align: center;
-    //margin-right: auto;
-    //margin-left: auto;
   }
 }
 
@@ -237,7 +224,6 @@
   line-height: 21px;
   color: $color-persian-blue;
   display: block;
-  //margin-top: -22px;
 }
 
 .advantages__info-wrapper {
@@ -259,16 +245,6 @@
     line-height: 30px;
     margin-bottom: 0;
   }
-
-  //@include vp-1023 {
-  //  margin-bottom: 6px;
-  //}
-  //
-  //@include vp-767 {
-  //  font-size: 20px;
-  //  line-height: 28px;
-  //  margin-bottom: 8px;
-  //}
 }
 
 .advantages__info-wrapper p {
@@ -280,7 +256,6 @@
   color: $color-default-sapphire;
   -webkit-text-fill-color: $color-default-sapphire;
   text-fill-color: $color-default-sapphire;
-  //background: none;
 
   @include vp-1199 {
     font-size: 16px;
@@ -290,7 +265,6 @@
   @include vp-767 {
     font-size: 16px;
     line-height: 22px;
-    //margin-top: -15px;
   }
 }
 
@@ -338,8 +312,6 @@
   -webkit-text-fill-color: $color-default-white;
   text-fill-color: $color-default-white;
   text-align: center;
-  //align-self: center;
-  //text-align: center;
   margin-right: 0;
 
   @include vp-1199 {
@@ -355,17 +327,4 @@
     line-height: 24px;
     margin-top: 7px;
   }
-}
-
-.advantages__item:hover {
-  //background-color: $color-deep-sky-blue;
-  //color: $color-alice-blue;
-}
-
-.advantages__item:hover svg {
-  //fill: $color-alice-blue;
-}
-
-.advantages__item:hover h3 {
-  //color: $color-alice-blue;
 }

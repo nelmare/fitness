@@ -8,10 +8,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  //text-rendering: optimizeLegibility;
-  //text-rendering: geometricPrecision;
   -webkit-text-size-adjust: none;
-  text-rendering: geometricPrecision;
 }
 
 html {
@@ -38,7 +35,6 @@ body {
 }
 
 a {
-  //color: $color-alice-blue;
   text-decoration: none;
 }
 
@@ -51,17 +47,6 @@ video {
 
 textarea {
   resize: none;
-}
-
-// chrome autofill background removal
-// если на проекте у инпутов используются разные цвета фонов\текста -
-// удалите это из глобала и используйте локально с нужными цветами
-// rgba не подойдет, сконвертируйте цвет в hex без прозрачности
-// если в стилях уже используется box-shadow есть другое решение -
-// задать к списку транзишенов `background-color 10000000s ease-out`
-input:-webkit-autofill {
-  //box-shadow: inset 0 0 0 1000px $color-pacific-blue;
-  //-webkit-text-fill-color: $color-white;
 }
 
 // firefox placeholder \ invalid fix + ios bdrs

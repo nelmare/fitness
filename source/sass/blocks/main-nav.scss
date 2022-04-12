@@ -49,32 +49,10 @@
   font-style: normal;
   justify-content: flex-start;
   margin-left: auto;
-
-  //@include vp-1919 {
-  //  margin-right: 7.7vw;
-  //  width: 38.8%;
-  //}
-  //
-  //@include vp-1365 {
-  //  margin-right: 4.7vw;
-  //  justify-content: flex-start;
-  //}
-  //
-  //@include vp-1179 {
-  //  width: 42%;
-  //}
-  //
-  //@include vp-1023 {
-  //  margin-right: 0;
-  //  width: auto;
-  //}
 }
 
 .main-nav__link {
   display: flex;
-  //padding-left: 35px;
-  //padding-top: 16px;
-  //position: relative;
   margin-left: 15px;
   margin-top: 15px;
   color: $color-default-white;
@@ -82,7 +60,6 @@
   font-size: 26px;
   line-height: 26px;
   letter-spacing: 0.03em;
-  //font-weight: 400;
 
   @include vp-1199 {
     font-size: 24px;

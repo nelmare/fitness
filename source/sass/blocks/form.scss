@@ -1,6 +1,4 @@
 .form {
-  //background-color: $color-deep-sky-blue;
-  //color: $color-white;
   width: 100%;
   max-width: 410px;
   display: flex;
@@ -9,7 +7,6 @@
 
   @include vp-1199 {
     max-width: 472px;
-    //max-width: none;
   }
 
   @include vp-767 {
@@ -43,10 +40,6 @@
   line-height: 16px;
   width: 100%;
   margin-right: 30px;
-
-  //&:last-child {
-  //  mar
-  //}
 }
 
 .form input::placeholder {
@@ -63,22 +56,9 @@
 }
 
 .form input:invalid {
-  //background-color: transparent;
   box-shadow: inset 0 0 0 1000px $color-default-sapphire;
   -webkit-text-fill-color: $color-default-white;
 }
-
-//@-webkit-keyframes autofill {
-//  to {
-//    color: $color-default-white;
-//    background: $color-default-sapphire;
-//  }
-//}
-//
-//input:-webkit-autofill {
-//  -webkit-animation-name: autofill;
-//  -webkit-animation-fill-mode: both;
-//}
 
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
@@ -93,25 +73,15 @@ input:-webkit-autofill:active {
   font-size: 14px;
   line-height: 16px;
   background-color: transparent;
-  //min-width: 265px;
   width: 100%;
   margin: 0;
-  //margin-right: 50px;
-  //border-radius: 3px;
   padding-top: 17px;
   padding-bottom: 16px;
   align-items: center;
   justify-content: center;
   border: 3px solid;
 
-  //@include vp-1023 {
-  //  margin-right: 86px;
-  //  padding-bottom: 11px;
-  //}
-
   @include vp-767 {
-    //margin-right: 0;
-    //width: 100%;
     margin-top: 9px;
   }
 }

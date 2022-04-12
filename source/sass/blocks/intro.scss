@@ -1,30 +1,11 @@
 .intro {
-  //background-repeat: no-repeat;
-  //background-position: center;
-  //background-size: cover;
-  //margin-top: 102px;
-  //position: relative;
-
-  //@include vp-1023 {
-  //  padding: 94px 0 195px 0;
-  //  margin-top: -14px;
-  //}
-  //
-  //@include vp-767 {
-  //  padding: 89px 0 179px 0;
-  //}
-
   display: grid;
-  //grid-template-columns: 396px 500px auto;
   grid-template-columns: 34.1% 43% auto;
-  //grid-template-rows: repeat(3, auto);
   grid-column-gap: 65px;
   margin-top: -6px;
 
   @include vp-1199 {
-    //grid-template-columns: 48% 50%;
     grid-template-columns: 48.6% 47.4%;
-    //grid-column-gap: 25px;
     grid-column-gap: 3%;
     justify-content: space-between;
   }
@@ -36,16 +17,9 @@
 }
 
 .intro__info-wrapper {
-  //grid-column: 1/5;
-  //grid-row: 2/-2;
-  //margin-right: 64px;
   position: relative;
-  //align-self: center;
   padding-top: 116px;
   align-self: start;
-
-  //display: flex;
-  //flex-direction: column-reverse;
   display: grid;
   grid-template-columns: repeat(3, auto);
   grid-template-rows: repeat(3, auto);
@@ -68,11 +42,6 @@
 
 .intro__image-wrapper {
   height: 556px;
-  //grid-column: 5/10;
-  //grid-row: 1/-1;
-  //max-width: 500px;
-  //margin-right: 10vw;
-  //
 
   @include vp-1199 {
     height: 390px;
@@ -95,16 +64,9 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  //grid-column: 10/12;
   justify-self: end;
   align-self: end;
-  //grid-row: 2/3;
   margin-bottom: 29px;
-  //display: flex;
-  //flex-direction: column;
-  //justify-content: center;
-  //align-items: flex-start;
-  //flex-wrap: wrap;
 
   @include vp-1199 {
     display: none;
@@ -124,6 +86,11 @@
   text-transform: uppercase;
   display: inline-block;
   vertical-align: middle;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
 }
 
 .intro__info-wrapper span {
@@ -131,7 +98,6 @@
   font-family: $ff-bebasneue;
   font-size: 49px;
   line-height: 59px;
-  //font-weight: 400;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   order: 1;
@@ -156,16 +122,12 @@
   list-style: none;
   order: 2;
   z-index: 2;
-  //position: absolute;
-  //top: 300px;
-  //left: 19px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
 
   grid-column: 1/3;
   grid-row: 3/5;
-  //align-self: center;
   align-self: start;
   justify-self: end;
   padding-left: 19px;
@@ -175,14 +137,13 @@
 
   @include vp-1199 {
     margin-bottom: 20px;
-    //padding-left: 0;
     min-width: 108px;
     margin-right: 25px;
     margin-top: 4px;
+    padding-left: 0;
   }
 
   @include vp-767 {
-    //padding-left: 0;
     min-width: 113px;
     margin-right: 0;
     margin-bottom: 15px;
@@ -197,42 +158,23 @@
   font-size: 14px;
   line-height: 21px;
   text-align: right;
-  //margin-bottom: 5px;
-
-  //@include vp-1023 {
-  //  width: 100%;
-  //  margin-bottom: 47px;
-  //}
-  //
-  //@include vp-767 {
-  //  font-size: 14px;
-  //  line-height: 22px;
-  //  margin-bottom: 35px;
-  //  max-width: 410px;
-  //}
 }
 
 .intro h1 {
   margin: 0;
   font-family: $ff-bebasneue;
-  //font-weight: 700;
-  font-weight: unset;
+  font-weight: 700;
   -webkit-text-stroke: thin;
   font-size: 109px;
   line-height: 109px;
   text-align: right;
   letter-spacing: 0.03em;
-  //padding: 0 30px 0 0;
-  //margin-bottom: 80px;
-  //text-transform: uppercase;
   order: 3;
   grid-column: 2/4;
   grid-row: 2/4;
   z-index: 1;
-  //justify-content: end;
   margin-top: 9px;
   justify-self: end;
-
 
   @include vp-1199 {
     font-size: 86px;
@@ -245,31 +187,10 @@
     font-size: 78px;
     line-height: 78px;
     margin-top: 10px;
-    //max-width: 298px;
   }
-
-  //color: $color-default-white;
-
-  //@include vp-1023 {
-  //  font-size: 64px;
-  //  line-height: 75px;
-  //  margin-bottom: 0;
-  //}
-  //
-  //@include vp-767 {
-  //  font-size: 36px;
-  //  line-height: 42px;
-  //  margin-bottom: 7px;
-  //}
 }
 
-
-
-
-
 .intro__info-wrapper a {
-  //font-size: 18px;
-  //line-height: 21px;
   color: $color-default-white;
   background-color: transparent;
   display: inline-block;
@@ -284,27 +205,13 @@
   margin-top: 50px;
   max-width: 233px;
 
-  &:hover {
-    border-color: $color-crimson;
-    //opacity: 1;
-  }
-
-  &:focus {
-    //opacity: 1;
-  }
-
   @include vp-1199 {
     margin-top: 36px;
     padding: 20px 31px 19px 31px;
   }
 
   @include vp-767 {
-    //font-size: 14px;
-    //line-height: 16px;
-    //margin-left: 0;
-    //padding: 12px 27px 13px 27px;
     width: 100%;
-    //max-width: 410px;
     grid-column: 1/-1;
     margin-top: 39px;
     max-width: none;

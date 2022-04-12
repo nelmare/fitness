@@ -17,9 +17,6 @@
 .reviews__container {
   position: relative;
   width: 676px;
-  //padding-left: 0;
-  //padding-right: 0;
-  //max-width: 1216px;
 
   @include vp-1199 {
     width: 682px;
@@ -42,16 +39,10 @@
   letter-spacing: 0.03em;
   margin-bottom: 50px;
   text-align: center;
-  //width: 100%;
-  //max-width: 1250px;
-  //margin-left: auto;
-  //margin-right: auto;
-  //padding: 0 45px;
 
   @include vp-1199 {
     font-size: 42px;
     line-height: 42px;
-    //text-align: center;
     margin-bottom: 40px;
   }
 
@@ -64,79 +55,26 @@
 
 .reviews__swiper {
   width: 560px;
-  //position: relative;
 
   @include vp-1199 {
-    //width: 682px;
     width: 566px;
-    //padding-left: 58px;
-    //padding-right: 58px;
-    //margin: 0 auto;
   }
 
-  //@include vp-1023 {
-  //  width: 567px;
-  //}
-
   @include vp-767 {
-    //width: 285px;
     width: 482px;
-    //padding-left: 30px;
-    //padding-right: 30px;
-    //overflow: hidden;
   }
 
   @include vp-575 {
     width: 226px;
   }
 }
-//
-//.swiper__wrapper {
-//  display: grid;
-//  grid-template-columns: repeat(4, minmax(230px, 260px));
-//  grid-template-rows: 294px;
-//  column-gap: 3.5%;
-//  justify-content: center;
-//
-//  @include vp-1199 {
-//    grid-template-columns: repeat(2, 268px);
-//    overflow: hidden;
-//    column-gap: 30px;
-//  }
-//
-//  @include vp-767 {
-//    grid-template-columns: repeat(auto-fit, minmax(226px, 226px));
-//    grid-template-rows: 274px;
-//  }
-//}
-
-//.swiper__wrapper {
-//  display: grid;
-//  grid-template-columns: repeat(4, minmax(230px, 260px));
-//  grid-template-rows: 294px;
-//  column-gap: 3.5%;
-//  justify-content: center;
-//
-//  @include vp-1199 {
-//    grid-template-columns: repeat(2, 268px);
-//    overflow: hidden;
-//    column-gap: 30px;
-//  }
-//
-//  @include vp-767 {
-//    grid-template-columns: repeat(auto-fit, minmax(226px, 226px));
-//    grid-template-rows: 274px;
-//  }
-//}
 
 .reviews__slide {
-  //width: 100%;
   width: 560px;
   height: 242px;
   background-color: $color-resolution-blue;
   box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
   position: relative;
-  //font-size: 18px;
   line-height: 22px;
   display: grid;
   grid-template-columns: 80px auto;
@@ -170,10 +108,6 @@
   display: flex;
   margin-top: 7px;
 
-  //@include vp-1199 {
-  //  width: 268px;
-  //}
-  //
   @include vp-767 {
     z-index: 2;
     grid-column: 1/2;
@@ -189,14 +123,7 @@
   object-fit: cover;
   height: 100%;
   border-radius: 50%;
-
-  //@include vp-1199 {
-  //  width: 268px;
-  //}
-  //
-  //@include vp-767 {
-  //  width: 226px;
-  //}
+  background-color: $color-shuttle-grey;
 }
 
 .reviews__info-wrapper {
@@ -211,11 +138,7 @@
 
 .reviews__slide h3 {
   margin: 0;
-  //margin-left: 30px;
   font-weight: 700;
-  //font-size: 18px;
-  //line-height: 27px;
-  //width: 100%;
   font-size: 20px;
   line-height: 30px;
   margin-bottom: 11px;
@@ -246,7 +169,6 @@
   position: absolute;
   width: 32px;
   height: 32px;
-  //top: 58.1%;
   top: 71.1%;
   transform: translateY(-50%);
   background-color: transparent;
@@ -256,13 +178,8 @@
   fill: $color-default-white;
 
   @include vp-1199 {
-    //top: 57.1%;
     top: 68.1%;
   }
-
-  //@include vp-767 {
-  //  top: 50.4%;
-  //}
 }
 
 .reviews__button--prev svg,
@@ -281,59 +198,28 @@
 }
 
 .reviews__button--prev {
-  //left: 25.3%;
   left: 0;
 
-  //@include vp-1314 {
-  //  left: 23.3%;
-  //}
-  //
-  //@include vp-1199 {
-    //left: 16.7%;
-  //}
-
-  //@include vp-1023 {
-  //  left: 5.7%;
-  //}
-  //
   @include vp-767 {
     top: 71.1%;
-}
+  }
 
   @include vp-575 {
-    //left: 4.2%;
     left: 15px;
-    //top: 58.4%;
     top: 65.4%;
   }
 }
 
 .reviews__button--next {
-  //right: 25.3%;
   right: 0;
   transform: translateY(-50%) rotate(180deg);
 
-  //@include vp-1314 {
-  //  right: 23.3%;
-  //}
-  //
-  //@include vp-1199 {
-  //  right: 16.7%;
-  //}
-  //
-  //@include vp-1023 {
-  //  right: 5.7%;
-  //}
-  //
-
   @include vp-767 {
-top: 65.1%;
+    top: 65.1%;
   }
 
   @include vp-575 {
-    //right: 4.2%;
     right: 15px;
-    //top: 54.8%;
     top: 62.8%;
   }
 }
