@@ -1,0 +1,9 @@
+.page-main__wrapper {
+  display: flex;
+  justify-content: center;
+  min-height: 337px;
+
+  @include vp-1199 {
+    flex-direction: column;
+  }
+}
