@@ -1231,6 +1231,7 @@ button.swiper-pagination-bullet {
   font-style: normal;
   font-weight: 700;
   font-family: "BN";
+  font-synthesis: none;
   font-display: swap;
   src: url("../fonts/bebasneue-bold.woff2") format("woff2"), url("../fonts/bebasneue-bold.woff") format("woff");
 }
@@ -1239,6 +1240,7 @@ button.swiper-pagination-bullet {
   font-style: normal;
   font-weight: 400;
   font-family: "BN";
+  font-synthesis: none;
   font-display: swap;
   src: url("../fonts/bebasneue-regular.woff2") format("woff2"), url("../fonts/bebasneue-regular.woff") format("woff");
 }
@@ -1657,6 +1659,7 @@ button,
   grid-row: 3/5;
   align-self: start;
   justify-self: end;
+  padding-left: 19px;
   margin-bottom: 34px;
   margin-right: 31px;
   margin-top: 17px;
@@ -1674,13 +1677,12 @@ button,
 .intro h1 {
   margin: 0;
   font-family: "BN", "Arial", sans-serif;
-  font-weight: 700;
+  font-weight: unset;
   -webkit-text-stroke: thin;
   font-size: 109px;
   line-height: 109px;
   text-align: right;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
   -webkit-box-ordinal-group: 4;
   -ms-flex-order: 3;
   order: 3;
