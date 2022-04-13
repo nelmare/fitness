@@ -53,7 +53,21 @@
   }
 }
 
-.reviews__swiper {
+.reviews.is-nojs .reviews__wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 40px;
+
+  @include vp-1199 {
+    row-gap: 30px;
+  }
+}
+
+.reviews.is-nojs .reviews__swiper {
+  overflow: visible;
+}
+
+.reviews .reviews__swiper {
   width: 560px;
 
   @include vp-1199 {
@@ -164,6 +178,10 @@
   }
 }
 
+.reviews.is-nojs .reviews__button {
+  display: none;
+}
+
 .reviews__button {
   display: block;
   position: absolute;
@@ -179,6 +197,14 @@
 
   @include vp-1199 {
     top: 68.1%;
+  }
+
+  @include vp-767 {
+    top: 71.1%;
+  }
+
+  @include vp-575 {
+    top: 65.4%;
   }
 }
 
@@ -200,13 +226,8 @@
 .reviews__button--prev {
   left: 0;
 
-  @include vp-767 {
-    top: 71.1%;
-  }
-
   @include vp-575 {
-    left: 15px;
-    top: 65.4%;
+    left: 3px;
   }
 }
 
@@ -214,12 +235,7 @@
   right: 0;
   transform: translateY(-50%) rotate(180deg);
 
-  @include vp-767 {
-    top: 65.1%;
-  }
-
   @include vp-575 {
-    right: 15px;
-    top: 62.8%;
+    right: 3px;
   }
 }

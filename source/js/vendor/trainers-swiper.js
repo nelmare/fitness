@@ -1,4 +1,7 @@
 export const addTrainersSwiper = () => {
+  const trainers = document.querySelector('[data-swiper="trainers"]');
+  trainers.classList.remove('is-nojs');
+
   new Swiper('.trainers__swiper', {
     // Optional parameters
     direction: 'horizontal',
@@ -7,7 +10,7 @@ export const addTrainersSwiper = () => {
     breakpoints: {
       320: {
         slidesPerView: 1,
-        spaceBetween: 0
+        spaceBetween: 30
       },
       576: {
         slidesPerView: 2,

@@ -12,8 +12,7 @@ const setupVideo = () => {
     link.remove();
     button.remove();
     video.classList.add('video--enabled');
-    let Player;
-    Player = new YT.Player('player', {
+    new YT.Player('player', {
       height: '285',
       width: '544',
       videoId: '9TZXsZItgdw',
@@ -21,7 +20,6 @@ const setupVideo = () => {
         onReady: (e) => e.target.playVideo(),
       },
     });
-    Player();
     link.removeAttribute('href');
     evt.preventDefault();
     evt.stopPropagation();

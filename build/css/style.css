@@ -1254,7 +1254,6 @@ html,
 body {
   margin: 0;
   padding: 0;
-  -webkit-text-size-adjust: none;
 }
 
 html {
@@ -2296,10 +2295,20 @@ button,
   margin-bottom: 50px;
 }
 
-.swiper__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.trainers.is-nojs .trainers__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(230px, 260px))[4];
+  grid-template-columns: repeat(4, minmax(230px, 260px));
+  -ms-grid-rows: 294px;
+  grid-template-rows: 294px;
+  -webkit-column-gap: 3.5%;
+  -moz-column-gap: 3.5%;
+  column-gap: 3.5%;
+  row-gap: 40px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .trainers__slide {
@@ -2409,6 +2418,11 @@ button,
 
 .trainers__slide li::marker {
   font-size: 20px;
+}
+
+.trainers.is-nojs .trainers__button-prev,
+.trainers.is-nojs .trainers__button-next {
+  display: none;
 }
 
 .trainers__button-prev,
@@ -2568,10 +2582,9 @@ button,
   line-height: 63px;
   background: -o-linear-gradient(322.39deg, #d10a42 0%, #0041ca 45.58%);
   background: linear-gradient(127.61deg, #d10a42 0%, #0041ca 45.58%);
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
   background-clip: text;
-  text-fill-color: transparent;
   margin-right: 30px;
 }
 
@@ -2600,7 +2613,7 @@ button,
   line-height: 22px;
   color: #102654;
   -webkit-text-fill-color: #102654;
-  text-fill-color: #102654;
+  background: none;
 }
 
 .advantages__item--center h4 {
@@ -2629,7 +2642,6 @@ button,
   font-size: 16px;
   line-height: 24px;
   -webkit-text-fill-color: #ffffff;
-  text-fill-color: #ffffff;
   text-align: center;
   margin-right: 0;
 }
@@ -2857,7 +2869,19 @@ button,
   text-align: center;
 }
 
-.reviews__swiper {
+.reviews.is-nojs .reviews__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  row-gap: 40px;
+}
+
+.reviews.is-nojs .reviews__swiper {
+  overflow: visible;
+}
+
+.reviews .reviews__swiper {
   width: 560px;
 }
 
@@ -2913,6 +2937,10 @@ button,
 .reviews__slide p {
   margin: 0;
   padding: 0;
+}
+
+.reviews.is-nojs .reviews__button {
+  display: none;
 }
 
 .reviews__button {
@@ -3654,6 +3682,16 @@ input:-webkit-autofill:active {
     width: 864px;
   }
 
+  .trainers.is-nojs .trainers__wrapper {
+    -ms-grid-columns: (268px)[2];
+    grid-template-columns: repeat(2, 268px);
+    overflow: hidden;
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+    row-gap: 30px;
+  }
+
   .trainers__slide {
     width: 268px;
     margin-right: 30px;
@@ -3901,7 +3939,11 @@ input:-webkit-autofill:active {
     margin-bottom: 40px;
   }
 
-  .reviews__swiper {
+  .reviews.is-nojs .reviews__wrapper {
+    row-gap: 30px;
+  }
+
+  .reviews .reviews__swiper {
     width: 566px;
   }
 
@@ -4295,6 +4337,12 @@ input:-webkit-autofill:active {
     width: 482px;
   }
 
+  .trainers.is-nojs .trainers__wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(226px, 226px));
+    -ms-grid-rows: 274px;
+    grid-template-rows: 274px;
+  }
+
   .trainers__slide {
     width: 226px;
     min-height: 274px;
@@ -4518,7 +4566,7 @@ input:-webkit-autofill:active {
     margin-bottom: 42px;
   }
 
-  .reviews__swiper {
+  .reviews .reviews__swiper {
     width: 482px;
   }
 
@@ -4567,18 +4615,14 @@ input:-webkit-autofill:active {
     text-align: center;
   }
 
+  .reviews__button {
+    top: 71.1%;
+  }
+
   .reviews__button--prev svg,
   .reviews__button--next svg {
     width: 12px;
     height: 21px;
-  }
-
-  .reviews__button--prev {
-    top: 71.1%;
-  }
-
-  .reviews__button--next {
-    top: 65.1%;
   }
 
   .page-main__container {
@@ -4702,6 +4746,16 @@ input:-webkit-autofill:active {
   }
 }
 
+@media (max-width: 599px) {
+  .trainers__button-prev {
+    left: 2.2%;
+  }
+
+  .trainers__button-next {
+    right: 2.2%;
+  }
+}
+
 @media (max-width: 575px) {
   .trainers__swiper {
     width: 226px;
@@ -4711,7 +4765,7 @@ input:-webkit-autofill:active {
     width: 290px;
   }
 
-  .reviews__swiper {
+  .reviews .reviews__swiper {
     width: 226px;
   }
 
@@ -4724,14 +4778,16 @@ input:-webkit-autofill:active {
     margin-bottom: 23px;
   }
 
-  .reviews__button--prev {
-    left: 15px;
+  .reviews__button {
     top: 65.4%;
   }
 
+  .reviews__button--prev {
+    left: 3px;
+  }
+
   .reviews__button--next {
-    right: 15px;
-    top: 62.8%;
+    right: 3px;
   }
 }
 

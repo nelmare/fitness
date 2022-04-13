@@ -6,7 +6,7 @@ import {anchorsScroll} from './modules/anchors-scroll';
 import {validateForm} from './modules/form';
 import {userPhoneMaskFill} from './vendor/phone-mask';
 import {iosVhFix} from './utils/ios-vh-fix';
-import {setupVideo} from './modules/video';
+import {setupVideo} from './vendor/video';
 
 window.addEventListener('DOMContentLoaded', () => {
 

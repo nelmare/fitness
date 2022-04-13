@@ -1,4 +1,7 @@
 export const addReviewsSwiper = () => {
+  const reviews = document.querySelector('[data-swiper="reviews"]');
+  reviews.classList.remove('is-nojs');
+
   new Swiper('.reviews__swiper', {
     // Optional parameters
     direction: 'horizontal',

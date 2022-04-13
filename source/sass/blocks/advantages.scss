@@ -47,7 +47,6 @@
   justify-content: center;
   width: 89.66%;
 
-
   @include vp-1199 {
     grid-template-columns: 44.3% 48%;
     grid-template-rows: repeat(3, auto);
@@ -200,12 +199,9 @@
   font-size: 71px;
   line-height: 63px;
   background: linear-gradient(127.61deg, $color-crimson 0%, $color-cobalt 45.58%);
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
   margin-right: 30px;
-  //margin-top: -21px;
 
   @include vp-1199 {
     font-size: 58px;
@@ -255,7 +251,7 @@
   line-height: 22px;
   color: $color-default-sapphire;
   -webkit-text-fill-color: $color-default-sapphire;
-  text-fill-color: $color-default-sapphire;
+  background: none;
 
   @include vp-1199 {
     font-size: 16px;
@@ -287,8 +283,6 @@
     line-height: 67px;
     margin-bottom: 0;
   }
-
-
 }
 
 .advantages__item--center span {
@@ -310,7 +304,6 @@
   font-size: 16px;
   line-height: 24px;
   -webkit-text-fill-color: $color-default-white;
-  text-fill-color: $color-default-white;
   text-align: center;
   margin-right: 0;
 
