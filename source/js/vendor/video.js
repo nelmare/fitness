@@ -8,21 +8,23 @@ const setupVideo = () => {
   let link = video.querySelector('[data-video="link"]');
   let button = video.querySelector('[data-video="button"]');
 
-  video.addEventListener('click', (ev) => {
+  video.addEventListener('click', (evt) => {
     link.remove();
     button.remove();
     video.classList.add('video--enabled');
-    new YT.Player('player', {
+    let Player;
+    Player = new YT.Player('player', {
       height: '285',
       width: '544',
       videoId: '9TZXsZItgdw',
       events: {
-        onReady: e => e.target.playVideo(),
+        onReady: (e) => e.target.playVideo(),
       },
     });
+    Player();
     link.removeAttribute('href');
-    ev.preventDefault();
-    ev.stopPropagation();
+    evt.preventDefault();
+    evt.stopPropagation();
   });
 };
 
