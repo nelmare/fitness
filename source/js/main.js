@@ -1,12 +1,12 @@
 import {showTabs} from './modules/tabs';
 import {shadowTextFill} from './modules/shadow-fill';
-import {addTrainersSwiper} from './vendor/trainers-swiper';
-import {addReviewsSwiper} from './vendor/reviews-swiper';
+import {addTrainersSwiper} from './modules/trainers-swiper';
+import {addReviewsSwiper} from './modules/reviews-swiper';
 import {anchorsScroll} from './modules/anchors-scroll';
 import {validateForm} from './modules/form';
-import {userPhoneMaskFill} from './vendor/phone-mask';
+import {userPhoneMaskFill} from './modules/phone-mask';
 import {iosVhFix} from './utils/ios-vh-fix';
-import {setupVideo} from './vendor/video';
+import {setupVideo} from './modules/video';
 
 window.addEventListener('DOMContentLoaded', () => {
 

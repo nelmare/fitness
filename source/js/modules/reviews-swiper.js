@@ -18,6 +18,4 @@ export const addReviewsSwiper = () => {
       prevEl: '.reviews__button--prev',
     },
   });
-}
-
-
+};

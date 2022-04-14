@@ -10,24 +10,24 @@ export const addTrainersSwiper = () => {
     breakpoints: {
       320: {
         slidesPerView: 1,
-        spaceBetween: 30
+        spaceBetween: 30,
       },
       576: {
         slidesPerView: 2,
-        spaceBetween: 30
+        spaceBetween: 30,
       },
       768: {
         slidesPerView: 2,
-        spaceBetween: 30
+        spaceBetween: 30,
       },
       1024: {
         slidesPerView: 3,
-        spaceBetween: 30
+        spaceBetween: 30,
       },
       1200: {
         slidesPerView: 4,
-        spaceBetween: 40
-      }
+        spaceBetween: 40,
+      },
     },
     keyboard: {
       enabled: true,
@@ -39,6 +39,4 @@ export const addTrainersSwiper = () => {
       prevEl: '.swiper-button-prev',
     },
   });
-}
-
-
+};
