@@ -111,7 +111,7 @@
   }
 
   &:hover::after,
-  &:focus::after {
+  &:focus-within::after {
     content: "";
     position: absolute;
     top: 0;

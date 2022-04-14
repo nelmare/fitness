@@ -2029,7 +2029,7 @@ button,
 }
 
 .tabs__tabcontent li:hover::after,
-.tabs__tabcontent li:focus::after {
+.tabs__tabcontent li:focus-within::after {
   content: "";
   position: absolute;
   top: 0;
