@@ -83,9 +83,12 @@
   max-width: 560px;
   min-height: 211px;
   background-color: $color-default-white;
-  padding: 27px 35px;
+  padding: 27px 35px 37px 35px;
   position: relative;
   z-index: 1;
+  display: grid;
+  grid-template-rows: min-content auto min-content;
+  height: 100%;
 
   &::before {
     content: "";
@@ -109,6 +112,10 @@
     background: linear-gradient(144.05deg, #d10a42 1.7%, #00359f 98.31%);
   }
 
+  &:nth-child(2n) {
+    align-self: end;
+  }
+
   @include vp-1199 {
     max-width: none;
 
@@ -125,6 +132,7 @@
 
   @include vp-767 {
     padding-top: 38px;
+    padding-bottom: 47px;
     text-align: center;
 
     &:nth-child(odd) {
@@ -145,9 +153,11 @@
 .sales__info-wrapper {
   width: 50%;
   background-color: $color-torch-red;
-  padding: 34px 45px 50px 45px;
+  padding: 34px 45px 46px 45px;
   color: $color-default-white;
   position: relative;
+  display: grid;
+  grid-template-rows: min-content auto min-content;
 
   @include vp-1199 {
     width: 338px;
@@ -185,19 +195,25 @@
   @include vp-1199 {
     margin-top: 0;
   }
+
+  @include vp-767 {
+    margin-top: -5px;
+  }
 }
 
 .sales a {
   text-transform: uppercase;
   font-weight: 700;
   display: block;
-  position: absolute;
+  position: relative;
+  margin-top: 10px;
   letter-spacing: 0.05em;
+  width: min-content;
 
   &::after {
     content: "";
     position: absolute;
-    bottom: -2px;
+    bottom: -1px;
     left: 0;
     width: 100%;
     height: 1px;
@@ -218,8 +234,8 @@
   font-size: 14px;
   line-height: 16px;
   color: $color-default-white;
-  bottom: 47px;
-  left: 45px;
+  //bottom: 0;
+  //left: 45px;
 
   &::after {
     background-color: $color-default-white;
@@ -230,8 +246,8 @@
   font-size: 12px;
   line-height: 14px;
   color: $color-resolution-blue;
-  bottom: 37px;
-  left: 35px;
+  //bottom: 37px;
+  //left: 35px;
   z-index: 2;
 
   &::after {
@@ -239,7 +255,7 @@
   }
 
   @include vp-767 {
-    bottom: 48px;
+    //bottom: 48px;
   }
 }
 
