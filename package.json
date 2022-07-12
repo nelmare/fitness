@@ -1,7 +1,7 @@
 {
-  "name": "Liga-A-start-template",
+  "name": "fitness",
   "version": "2.0.0",
-  "description": "Стартовый шаблон сборки Лиги А",
+  "description": "Сайт фитнес центра",
   "browserslist": [
     "last 3 versions",
     "IE 11",
@@ -11,7 +11,7 @@
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig & npm run stylelint & eslint source/js/",
-    "build": "cross-env NODE_ENV=production gulp build & gulp imagemin",
+    "build": "cross-env NODE_ENV=production gulp docs & gulp imagemin",
     "start": "cross-env NODE_ENV=development gulp start",
     "webp": "gulp webp",
     "imagemin": "gulp imagemin",
